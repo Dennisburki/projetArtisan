@@ -1,0 +1,18 @@
+[
+    {
+    "titre" : "Paris-Brest",
+    "desc" : "Couronne de pâte à choux, fourrée de crème pâtissière pralinée et garni d'amandes effilées.",
+    "img" : "https://www.pariszigzag.fr/wp-content/uploads/2020/10/Paris-Brest-Paris-ZigZag.jpg"
+  },
+  {
+    "titre" : "Fraisier",
+    "desc" : "Crème mousseline, fraises découpées, glaçage... Le fraisier propose un mélange  de textures et de saveurs.",
+    "img" : "https://gateauetcuisinerachida.com/wp-content/uploads/2019/12/fraisier-recette.jpg"
+  },
+  {
+    "titre" : "Tarte au Citron",
+    "desc" : "Onctueuse crème au citron et sa crème d'amandes sur une pâte sablée",
+    "img" : "https://i.pinimg.com/originals/1c/41/8d/1c418d0abd52db4e20072b5cb7893019.jpg"
+  }
+  
+]
