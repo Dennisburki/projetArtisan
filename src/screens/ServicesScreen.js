@@ -15,7 +15,7 @@ const ServicesScreen = () => {
         <View style={{flexDirection:'row', flex:2}}>
             <Card.Cover source={require('../../assets/img/surplace.jpg')} style={{width:'50%',height:'100%'}}/>
             <View style={{justifyContent:'center'}}>
-            <Text style={{textAlign:'center', fontSize:20, fontWeight:'bold',maxWidth:150, marginHorizontal:30}}>Vente sur Place</Text>
+            <Text style={{textAlign:'justify', fontSize:20, fontWeight:'bold',maxWidth:150, marginHorizontal:8}}>Vente sur Place</Text>
             </View>
         </View>
     </Card>
@@ -33,7 +33,7 @@ const ServicesScreen = () => {
         <View style={{flexDirection:'row', flex:2}}>
             <Card.Cover source={require('../../assets/img/perso.jpg')} style={{width:'50%',height:'100%'}}/>
             <View style={{justifyContent:'center'}}>
-            <Text style={{textAlign:'center', fontSize:20, fontWeight:'bold',maxWidth:150, marginHorizontal:30}}>Réalisations Personalisées</Text>
+            <Text style={{textAlign:'center', fontSize:20, fontWeight:'bold',maxWidth:150, marginHorizontal:20}}>Réalisations Personalisées</Text>
             </View>
         </View>
     </Card>

@@ -3,8 +3,8 @@ import * as React from 'react'
 import { BottomNavigation, Text, Card } from 'react-native-paper'
 import HomeScreen from '../screens/HomeScreen'
 import ServicesScreen from '../screens/ServicesScreen'
-import CardComponent from './CardComponent'
 import { View,TouchableOpacity, ScrollView  } from 'react-native'
+import ContactScreen from '../screens/ContactScreen'
 
 const HomeRoute = () => <HomeScreen/>
 const ServicesRoute = () => <ServicesScreen/>
@@ -15,8 +15,10 @@ const RealRoute = (props) =>{
     const data = require('../../assets/Real.json')
 
     return (
-
-      data.map((element,key) => (
+      <View style={{flex:1}}>
+        <Text>Réalisations</Text>
+      <Text style={{fontWeight:'bold', textAlign:'center', fontSize:25, marginVertical:5}}>Nos Réalisations</Text>
+      {data.map((element,key) => (
 
       <Card style={{flex:1, marginHorizontal:20, marginVertical:10}} key={key}>
   
@@ -31,7 +33,7 @@ const RealRoute = (props) =>{
                 </ScrollView>
   
                 <TouchableOpacity onPress={()=>
-                  props.route.navigation.navigation.navigate('Produits', {title:element.titre, desc:element.desc, img:element.img})
+                  props.route.navigation.navigation.navigate('Produits', {title:element.titre, desc:element.desc, img:element.img, prix:element.prix})
                 }>
                   <Text style={{
                         borderWidth:1,
@@ -48,10 +50,11 @@ const RealRoute = (props) =>{
           </View>
       </Card>
   
-   ))
+   ))}
+   </View>
   )
 }
-const ContactRoute = () => <Text>contact</Text>;
+const ContactRoute = () => <ContactScreen/>;
 
 const BottomTabComponent = (props) => {
     const [index, setIndex] = React.useState(0)
