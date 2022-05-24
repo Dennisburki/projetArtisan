@@ -6,12 +6,14 @@ import StackNavigation from './src/navigation/StackNavigation';
 
 const App = () => (
 
+  
   <PaperProvider>
 
     <HeaderComponent/>
     <StackNavigation/>
 
   </PaperProvider>
+  
   )
 
   export default App

@@ -29,6 +29,7 @@
     "react-native-screens": "^3.13.1",
     "react-native-vector-icons": "^9.1.0",
     "react-native-web": "0.17.7",
+    "react-native-webview": "^11.18.2",
     "webpack-dev-server": "~3.11.0"
   },
   "devDependencies": {

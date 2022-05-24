@@ -7,7 +7,7 @@ import { StyleSheet, Text, View } from 'react-native';
 const HeaderComponent = () => {
   return (
    
-        <Appbar.Header style={{backgroundColor:'black'}}>
+        <Appbar.Header style={{backgroundColor:'rgb(70, 173, 10)'}}>
           <Appbar.Content title="LH Pâtisserie" />
         </Appbar.Header>
   )

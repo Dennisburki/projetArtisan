@@ -29,21 +29,37 @@ const RealRoute = (props) =>{
               <View style={{flexDirection:'column',flex:3, alignItems:'center', justifyContent:'center'}}>
   
                 <ScrollView style={{maxHeight:125}}>
-                  <Text style={{textAlign:'justify', fontSize:15, fontWeight:'bold',marginHorizontal:7,marginVertical:16, maxWidth:150, justifyContent:'center'}} >{element.desc}</Text>
+                  <Text
+                  style={{
+                    textAlign:'justify',
+                    fontSize:15,
+                    fontWeight:'bold',
+                    marginHorizontal:7,
+                    marginVertical:16,
+                    maxWidth:150,
+                    justifyContent:'center'
+                    }} >
+                      {element.desc}</Text>
                 </ScrollView>
   
                 <TouchableOpacity onPress={()=>
-                  props.route.navigation.navigation.navigate('Produits', {title:element.titre, desc:element.desc, img:element.img, prix:element.prix})
+                  props.route.navigation.navigation.navigate('Produits',
+                  {
+                    title:element.titre,
+                    desc:element.desc,
+                    img:element.img,
+                    prix:element.prix
+                  })
                 }>
                   <Text style={{
-                        borderWidth:1,
-                        borderColor:'black',
-                        backgroundColor:'black',
+                        
+                        backgroundColor:'rgb(255, 173, 10)',
                         color:'white',
-                        fontSize:28,
+                        fontSize:24,
                         borderRadius:7,
                         width:100,
-                        textAlign:'center'}}>Détails</Text>
+                        textAlign:'center'
+                        }}>Détails</Text>
                 </TouchableOpacity>
   
               </View>
@@ -59,10 +75,10 @@ const ContactRoute = () => <ContactScreen/>;
 const BottomTabComponent = (props) => {
     const [index, setIndex] = React.useState(0)
     const [routes] = React.useState([
-      { key: 'home', title: 'Home', icon: 'home', color:'black' },
-      { key: 'services', title: 'Services', icon: 'room-service', color:'black' },
-      { key: 'real', title: 'Réalisations', icon: 'muffin', color:'black', navigation:props },
-      { key: 'contact', title: 'Contact', icon: 'information', color:'black' },
+      { key: 'home', title: 'Home', icon: 'home', color:'rgb(70, 173, 10)' },
+      { key: 'services', title: 'Services', icon: 'room-service', color:'rgb(70, 173, 10)' },
+      { key: 'real', title: 'Réalisations', icon: 'muffin', color:'rgb(70, 173, 10)', navigation:props },
+      { key: 'contact', title: 'Contact', icon: 'information', color:'rgb(70, 173, 10)' },
     ]);
   
     const renderScene = BottomNavigation.SceneMap({
